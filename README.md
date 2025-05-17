@@ -7,18 +7,19 @@ Use a camera (like a Raspberry Pi Camera, USB Camera or smartphone camera).
 Position it to clearly view the LCD screen displaying numbers.
 Image Capture & Processing:
 
-Continuously capture frames from the camera.
-Use OCR (Optical Character Recognition) to extract the digital number from each frame.
-Popular OCR tools: Tesseract.js (JavaScript), OpenCV with Tesseract OCR (Python), or cloud services like Google Vision API or Azure Cognitive Services.
-Data Refinement:
-
+1. Continuously capture frames from the camera.
+2. Use OCR (Optical Character Recognition) to extract the digital number from each frame. Popular OCR tools: Tesseract.js (JavaScript)
+3 . Data Refinement:
 Filter OCR results to ensure accuracy (e.g., validate number formats, implement retries or confidence thresholds).
+4. Real-time Send the OCR Data via SingalR results to Backend SignalR Server immediately after each read..
+ 
 Real-time Data Transmission:
 
-Set up a backend server (ASP.NET Core) that:
-Receives the OCR data.
-Maintains a SignalR connection.
-Sends the latest number to connected clients (React app) immediately after each read.
+- Set up a backend server (ASP.NET Core) that:
+- Receives the OCR data.
+- Maintains a SignalR connection.'
+- Broadcasts it to connected React clients.
+- Sends the latest number to connected clients (React app) immediately after each read.
 
 React Frontend:
 
