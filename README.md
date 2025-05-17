@@ -5,8 +5,9 @@ Hardware & Setup:
 
 Use a camera (like a Raspberry Pi Camera, USB Camera or smartphone camera).
 Position it to clearly view the LCD screen displaying numbers.
-Image Capture & Processing:
 
+Image Capture & Processing:
+React Native  Frontend:
 1. Continuously capture frames from the camera.
 2. Use OCR (Optical Character Recognition) to extract the digital number from each frame. Popular OCR tools: Tesseract.js (JavaScript)
 3 . Data Refinement:
